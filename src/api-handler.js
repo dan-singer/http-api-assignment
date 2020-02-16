@@ -42,7 +42,7 @@ const serveUnauthorized = (request, response, acceptHeader, queryParams) => {
   let statusCode; let id = null; let message;
   if (queryParams && queryParams.loggedIn === 'yes') {
     statusCode = 200;
-    message = 'This is a successful response';
+    message = 'You have successfully viewed the content.';
   } else {
     statusCode = 401;
     message = 'Missing loggedIn query parameter set to yes';
