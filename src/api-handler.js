@@ -29,7 +29,7 @@ const serveBadRequest = (request, response, acceptHeader, queryParams) => {
   let statusCode; let id = null; let message;
   if (queryParams && queryParams.valid === 'true') {
     statusCode = 200;
-    message = 'This is a successful response';
+    message = 'This request has the required parameters';
   } else {
     statusCode = 400;
     message = 'Missing valid query parameter set to true';
