@@ -12,7 +12,7 @@ const serveMessage = (request, response, acceptHeader, statusCode, message, id) 
     str = `
         <response>
             <message>${message}</message>
-            ${id && `<id>${id}</id>`}
+            ${id ? `<id>${id}</id>` : ''}
         </response>
         `;
   }
